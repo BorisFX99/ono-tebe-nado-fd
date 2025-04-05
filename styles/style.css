@@ -6,11 +6,11 @@ h4 {
     font-weight: 700;
     text-transform: uppercase;
 }
-ul{
+ul {
     list-style: none;
 }
 /* Общие стили */
-.menu_text_format{
+.menu_text_format {
     font-size: 18px;
 }
 
@@ -42,14 +42,15 @@ ul{
 .header_menu-list {
     display: flex;
     list-style-type:circle;
-    gap:32px;  
+    gap:32px;
 }
 
 .header_logo-image {
     display: block;
     height: 105px;
-    width: 158px; 
+    width: 158px;
 }
+
 .address {
     max-width: 240px;
     height: 98px;
@@ -87,7 +88,7 @@ ul{
     inset: 0;
 }
 
-.cover_title{
+.cover_title {
     display: flex;
     flex-direction: column;
     padding:165px 50px 106px 50px;
@@ -124,7 +125,7 @@ ul{
 .cover_description-text {
     padding-top: 12px;
     font-size: 22px;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     font-weight: 400;
     text-transform: uppercase;
     word-spacing: 17px;
@@ -184,11 +185,13 @@ ul{
 
 /* Background карточек (3 шт) */
 .card_type_film {
-    background-image: url('../images/card-lot-01.jpg');  
+    background-image: url('../images/card-lot-01.jpg');
 }
-.card_type_book{
+
+.card_type_book {
     background-image: url('../images/card-lot-02.jpg');
 }
+
 .card_type_picture{
     background-image: url('../images/card-lot-03.jpg');
 }
@@ -223,7 +226,7 @@ ul{
     margin-bottom: 180px;
 }
 
-.about_column-auction{
+.about_column-auction {
     display: grid;
     grid-template-rows: 140px 1fr;
     justify-items: start;
@@ -231,8 +234,7 @@ ul{
     padding-left: 25px;
 }
 
-
-.inner{
+.inner {
     width: 693px;
     grid-row-start: 2;
     line-height: 42px;
@@ -260,7 +262,7 @@ ul{
     font-size: 40px;
 }
 
-.about_text-first{
+.about_text-first {
     margin-bottom: 24px;
     padding-right: 5px;
 }
@@ -272,31 +274,33 @@ ul{
 
 /* Section Footer */
 
-.footer{
+.footer {
    display: grid;
    padding: 0 50px;
-   grid-template-columns: 1fr auto 1fr;;
+   grid-template-columns: 1fr auto 1fr;
    padding-top: 3px;
+   margin-bottom: 82px;
 }
 
 .footer_address {
     justify-self: start;
 }
-.footer_menu{
+
+.footer_menu {
     text-align: center;
 }
 
-.footer_social-icon{
+.footer_social-icon {
     width: 48px;
 }
 
-.footer_menu-list{
+.footer_menu-list {
     text-align: center;
 }
 .footer_social-list{
     display: flex;
     justify-self: end;
-    gap: 48px;  
+    gap: 48px;
 }
 
 
