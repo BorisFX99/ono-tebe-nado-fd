@@ -1,17 +1,3 @@
-/* Общие стили */
-h1,
-h2,
-h3,
-h4 {
-    font-weight: 700;
-    text-transform: uppercase;
-}
-ul {
-    list-style: none;
-
-}
-
-
 /* header */
 
 .header {
@@ -21,12 +7,9 @@ ul {
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
 }
+
 .header__menu {
     padding-bottom: 1px;
-}
-
-/*общий стиль для текста меню*/
-.menu_text-format {
     font-size: 18px;
 }
 
@@ -44,18 +27,16 @@ ul {
 
 /* общий стиль активных ссылок*/
 .link-active {
-    text-transform:lowercase;
     text-decoration: none;
 }
 
-/* общий стиль ссылок*/
-
-.links-list-item_no-bullit {
+/* Убираем маркер у активных ссылок в списке*/
+.links-list-item__no-bullet {
    list-style: none;
 }
 
-/* настройка последнего пункта меню*/
-.header__link-padding {
+/* настройка последнего пункта меню элегантно*/
+.header__links-list :last-child a {
     padding-left:4px;
 }
 
@@ -65,7 +46,7 @@ ul {
     width: 158px;
 }
 
-.header__address {
+.address {
     max-width: 240px;
     justify-self: end;
     line-height: 136%;
@@ -83,40 +64,38 @@ ul {
     position:relative;
     min-height: 757px;
     background-image: url('../images/cover.jpg');
-    background-size:cover ;
-    background-position:-138px 0;
-    z-index: -2;
-   
+    background-size: cover ;
+    background-position: center;
 }
 .overlay {
     position:absolute;
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
-    z-index: -1;
     inset: 0;
 }
 
 .cover__title {
+    position: relative;
     display: flex;
     flex-direction: column;
+    gap:22px;
     padding:165px 50px 0;
     margin-bottom: 106px;
-    color:#FFFFFF;
     font-weight: 700;
     font-size: 100px;
+    text-transform: uppercase;
     line-height: 114%;
     letter-spacing: 0.3em;
-    gap:21px;
+    color:#FFFFFF;
 }
 
-
-.aligned-text_center {
+.cover__title-aligned-text_center {
     text-align: center;
     padding-left: 30px;
 }
 
-.aligned-text_right {
+.cover__title-aligned-text_right {
     text-align: right;
 }
 
@@ -125,6 +104,7 @@ ul {
 }
 
 .cover__discription {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,7 +125,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 13px 0;
+    padding: 12px 0;
     min-width: 257px;
     border: 1px solid rgba(255, 255, 255, 1);
     background-color:transparent;
@@ -183,13 +163,16 @@ ul {
     min-height: 596px;
 }
 
+.card-link {
+    text-decoration: none;
+}
+
 .card {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    z-index: 0;
     padding: 48px 40px;
     background-size:cover;
     background-position: center;
@@ -209,13 +192,16 @@ ul {
 }
 
 .card__title {
+    position: relative;
     font-size: 22px;
     line-height: 120%;
+    text-transform: uppercase;
     text-decoration-line: underline;
     text-underline-offset: 3px;
 }
 
 .card__text {
+    position: relative;
     font-size: 20px;
     line-height: 120%;
 }
@@ -237,18 +223,11 @@ ul {
     margin-bottom: 180px;
 }
 
-.about_column-auction {
-    display: grid;
-    grid-template-rows: 140px 1fr;
-    justify-items: start;
-    align-items: start;
-}
-
 .about__logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 36px;
     margin-left: 47px;
     width: 240px;
     height: 240px;
@@ -260,22 +239,19 @@ ul {
     width: 148px;
 }
 
-.spacer {
-    display: none;
-}
-
-.inner {
-    grid-row-start: 2;
+.about__column-auction{
     padding-left: 25px;
     line-height: 40px;
+    
 }
 
 .about__title {
-    margin-bottom: 102px;
+    margin:141px 0 102px;
     font-size: 40px;
+    text-transform: uppercase;
 }
 
-.about__text-first {
+.about__text-lead {
     margin-bottom: 24px;
     padding-right: 5px;/* в макете явно указан этот отступ в первом абзаце*/
 }
@@ -295,16 +271,14 @@ ul {
    margin-bottom: 82px;
 }
 
-.footer_address {
+.footer__address {
     max-width:264px ;
     justify-self: start;
     line-height: 134%;
-    font-size: 18px;
-    font-style: normal;
-    text-underline-offset: 4px;
 }
 
 .footer__menu {
+    font-size: 18px;
     text-align: center;
 }
 
@@ -312,13 +286,15 @@ ul {
     width: 48px;
 }
 
-.footer_menu-list {
+.footer__menu-list {
+    list-style: none;
     text-align: center;
 }
 .footer__social-list {
     display: flex;
     justify-self: end;
     gap: 48px;
+    list-style: none;
 }
 
 

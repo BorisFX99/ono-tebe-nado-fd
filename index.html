@@ -10,10 +10,10 @@
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
   <body>
-    <header class="header menu_text-format">
+    <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="links-list-item_no-bullit">
+          <li class="links-list-item__no-bullet">
             <a href="#" class="menu__link link-active">
             Главная
             </a>
@@ -24,7 +24,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="menu__link header__link-padding">
+            <a href="#" class="menu__link">
             Об аукционе
             </a>
           </li>
@@ -34,7 +34,7 @@
         <img class ="header__logo-image" src="images/logo-black.svg" 
         alt="Логотип проекта"/>
       </a>
-      <address class="header__address">
+      <address class="address">
         <p>
            <a href="tel:+99995555555">
           +9 999 555 5555
@@ -49,14 +49,14 @@
       <section class="cover">
           <div class="overlay"></div>
           <h1 class ="cover__title">
-            <span class="aligned-text">Оно</span>
-            <span class="aligned-text_center">Тебе</span>
-            <span class="aligned-text_right">
+            <span class="cover__title-aligned-text">Оно</span>
+            <span class="cover__title-aligned-text_center">Тебе</span>
+            <span class="cover__title-aligned-text_right">
             Над<span class="no-letter-spacing">о</span>
             </span>
           </h1>
           <div class="cover__discription">
-            <h3 class="cover__description-text">Аукцион вещей, в которые никто не верил</h3>
+            <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
             <button class="bet-button">Сделать ставку</button>
           </div>
       </section>
@@ -119,17 +119,15 @@
       <section class="about">
         <div class="about__column">
           <div class="about__logo">
-            <img class="about__logo-image" alt="logo" 
+            <img class="about__logo-image" alt="Логотип" 
             src="images/logo-white.svg">
           </div>
-        </div>
-          <article class="about_column-auction">
-            <div class="spacer"></div>
-            <div class="inner">
-          <h4 class="about__title about_content">
-            Об аукционе
-          </h4>
-            <p class="about__text about__text-first">
+          </div>
+          <article class="about__column-auction">
+            <h2 class="about__title">
+              Об аукционе
+            </h2>
+            <p class="about__text about__text-lead">
               Здесь вы не встретите очередное пафосное собрание 
               невероятно дорогого антиквариата. Наши лоты вообще не 
               должны были попасть ни на один аукцион. Потому что кому нужен 
@@ -149,7 +147,7 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="footer_address">
+      <address class="address footer__address">
         <p>
            <a href="tel:+99995555555">
           +9 999 555 5555<br>
@@ -160,10 +158,10 @@
            Амстердам
         </p>
       </address>
-      <nav class="footer__menu menu_text-format">
-        <ul class="footer_menu-list">
-          <li>
-            <a href="#" class="menu__link">
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="links-list-item__no-bullet">
+            <a href="#" class="menu__link link-active">
             Главная
             </a>
           </li>
@@ -182,19 +180,19 @@
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a href="#" class="footer__social-link">
-            <img src="images/yt.svg" alt="YouTube"
+            <img src="images/yt.svg" alt="Ютьюб"
             class="footer__social-icon">
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="#" class="footer__social-link">
-            <img src="images/vk.svg" alt="VKontakte"
+            <img src="images/vk.svg" alt="Вконтакте"
             class="footer__social-icon">
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="#" class="footer__social-link">
-            <img src="images/pinterest.svg" alt="Pinterest"
+            <img src="images/pinterest.svg" alt="Пинтерест"
             class="footer__social-icon">
           </a>
         </li>
