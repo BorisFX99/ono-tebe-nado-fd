@@ -35,7 +35,7 @@
    list-style: none;
 }
 
-/* настройка последнего пункта меню элегантно*/
+/* настройка последнего пункта меню хедера*/
 .header__links-list :last-child a {
     padding-left:4px;
 }
@@ -239,7 +239,7 @@
     width: 148px;
 }
 
-.about__column-auction{
+.about__column-auction {
     padding-left: 25px;
     line-height: 40px;
     
