@@ -16,7 +16,7 @@
 .header__links-list {
     display: flex;
     list-style-type:circle;
-    gap:31px;
+    gap:32px;
 }
 
 .menu__link {
@@ -31,13 +31,13 @@
 }
 
 /* Убираем маркер у активных ссылок в списке*/
-.links-list-item__no-bullet {
+.header__links-list-item_no-bullet {
    list-style: none;
 }
 
 /* настройка последнего пункта меню хедера*/
-.header__links-list :last-child a {
-    padding-left:4px;
+.header__links-list li:last-child a {
+    padding-left:3px;
 }
 
 .header__logo-image {
@@ -239,21 +239,23 @@
     width: 148px;
 }
 
+
 .about__column-auction {
+    display: flex;
+    flex-direction: column;
     padding-left: 25px;
     line-height: 40px;
-    
+    gap:24px;
 }
 
 .about__title {
-    margin:141px 0 102px;
+    margin:141px 0 77px;
     font-size: 40px;
     text-transform: uppercase;
 }
 
-.about__text-lead {
-    margin-bottom: 24px;
-    padding-right: 5px;/* в макете явно указан этот отступ в первом абзаце*/
+.about__column-auction p:first-of-type {
+    padding-right: 5px;
 }
 
 .about__text {
