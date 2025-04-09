@@ -241,20 +241,22 @@
 
 
 .about__column-auction {
-    display: flex;
-    flex-direction: column;
     padding-left: 25px;
     line-height: 40px;
-    gap:24px;
 }
 
+.about__column-auction-content {
+    display:flex;
+    flex-direction: column;
+    gap:24px;
+}
 .about__title {
-    margin:141px 0 77px;
+    margin:141px 0 101px;
     font-size: 40px;
     text-transform: uppercase;
 }
 
-.about__column-auction p:first-of-type {
+.about__column-auction-content p:first-child {
     padding-right: 5px;
 }
 
